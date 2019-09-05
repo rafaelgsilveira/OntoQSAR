@@ -1,4 +1,3 @@
-![headshot] (biology-blur-blurred-background-954585.jpg)
 # OntoDrug
 
 OntoDrug is a project to develop an Ontology that represents QSAR (Quantitative Structure–Activity Relationship)and a tool to use it.
