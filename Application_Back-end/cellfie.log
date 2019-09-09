@@ -1,0 +1,957 @@
+Date: 2019-05-19 12:23:06
+Ontology source: /C:/Users/matheus19/Desktop/Livros/BACKUP/englishOntology_populada.owl
+Worksheet source: C:\Users\matheus19\Desktop\ic\1Popular_Ontologia_Artigo5.xlsx
+Transformation rules: C:\Users\matheus19\Desktop\ic\rules.json
+
+# Cell range: (Dados Inibidores!G2:G+) Comment: ""
+# Individual: @G*
+# Types: Chemical_Descriptor
+
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: Chemical_Descriptor
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: Chemical_Descriptor
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: Chemical_Descriptor
+
+===========================================================================================================
+Date: 2019-05-19 12:23:19
+Ontology source: /C:/Users/matheus19/Desktop/Livros/BACKUP/englishOntology_populada.owl
+Worksheet source: C:\Users\matheus19\Desktop\ic\1Popular_Ontologia_Artigo5.xlsx
+Transformation rules: C:\Users\matheus19\Desktop\ic\rules.json
+
+# Cell range: (Dados Inibidores!G2:G+) Comment: ""
+# Individual: @G*
+# Types: BBB
+
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: BBB
+
+===========================================================================================================
+Date: 2019-05-19 12:23:23
+Ontology source: /C:/Users/matheus19/Desktop/Livros/BACKUP/englishOntology_populada.owl
+Worksheet source: C:\Users\matheus19\Desktop\ic\1Popular_Ontologia_Artigo5.xlsx
+Transformation rules: C:\Users\matheus19\Desktop\ic\rules.json
+
+# Cell range: (Dados Inibidores!G2:G+) Comment: ""
+# Individual: @G*
+# Types: BBB
+
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: BBB
+Individual: Yes  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: BBB
+Individual: No  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: BBB
+
+# Cell range: (Dados Inibidores!A2:G+) Comment: ""
+# Individual: @A* 
+#    Types: Inhibitor
+#     Facts: has_the @G*
+
+Individual: 5  # Generated from value "5" located at cell 'Dados Inibidores'!A2.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: Inhibitor
+Individual: 35  # Generated from value "35" located at cell 'Dados Inibidores'!A3.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: Inhibitor
+Individual: 36  # Generated from value "36" located at cell 'Dados Inibidores'!A4.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: Inhibitor
+Individual: 37  # Generated from value "37" located at cell 'Dados Inibidores'!A5.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: Inhibitor
+Individual: 38  # Generated from value "38" located at cell 'Dados Inibidores'!A6.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: Inhibitor
+Individual: 41  # Generated from value "41" located at cell 'Dados Inibidores'!A7.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: Inhibitor
+Individual: 42  # Generated from value "42" located at cell 'Dados Inibidores'!A8.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: Inhibitor
+Individual: 43  # Generated from value "43" located at cell 'Dados Inibidores'!A9.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: Inhibitor
+Individual: 45  # Generated from value "45" located at cell 'Dados Inibidores'!A10.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: Inhibitor
+Individual: 46  # Generated from value "46" located at cell 'Dados Inibidores'!A11.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: Inhibitor
+Individual: 47a  # Generated from value "47a" located at cell 'Dados Inibidores'!A12.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: Inhibitor
+Individual: 47b  # Generated from value "47b" located at cell 'Dados Inibidores'!A13.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: Inhibitor
+Individual: 47c  # Generated from value "47c" located at cell 'Dados Inibidores'!A14.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: Inhibitor
+Individual: 47d  # Generated from value "47d" located at cell 'Dados Inibidores'!A15.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: Inhibitor
+Individual: 47e  # Generated from value "47e" located at cell 'Dados Inibidores'!A16.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: Inhibitor
+Individual: 47f  # Generated from value "47f" located at cell 'Dados Inibidores'!A17.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: Inhibitor
+Individual: 47i  # Generated from value "47i" located at cell 'Dados Inibidores'!A18.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: Inhibitor
+Individual: 47j  # Generated from value "47j" located at cell 'Dados Inibidores'!A19.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: Inhibitor
+Individual: 47k  # Generated from value "47k" located at cell 'Dados Inibidores'!A20.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: Inhibitor
+Individual: 47l  # Generated from value "47l" located at cell 'Dados Inibidores'!A21.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: Inhibitor
+Individual: 47m  # Generated from value "47m" located at cell 'Dados Inibidores'!A22.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: Inhibitor
+Individual: 47n  # Generated from value "47n" located at cell 'Dados Inibidores'!A23.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: Inhibitor
+Individual: 47o  # Generated from value "47o" located at cell 'Dados Inibidores'!A24.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: Inhibitor
+Individual: 47p  # Generated from value "47p" located at cell 'Dados Inibidores'!A25.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: Inhibitor
+Individual: 47q  # Generated from value "47q" located at cell 'Dados Inibidores'!A26.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: Inhibitor
+Individual: 47r  # Generated from value "47r" located at cell 'Dados Inibidores'!A27.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: Inhibitor
+Individual: 47s  # Generated from value "47s" located at cell 'Dados Inibidores'!A28.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: Inhibitor
+Individual: 47t  # Generated from value "47t" located at cell 'Dados Inibidores'!A29.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: Inhibitor
+Individual: 47u  # Generated from value "47u" located at cell 'Dados Inibidores'!A30.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: Inhibitor
+Individual: 47v  # Generated from value "47v" located at cell 'Dados Inibidores'!A31.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: Inhibitor
+Individual: 3Table47e  # Generated from value "3Table47e" located at cell 'Dados Inibidores'!A32.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: Inhibitor
+Individual: 3Table47w  # Generated from value "3Table47w" located at cell 'Dados Inibidores'!A33.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: Inhibitor
+Individual: 3Table47j  # Generated from value "3Table47j" located at cell 'Dados Inibidores'!A34.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: Inhibitor
+Individual: 3Table47z  # Generated from value "3Table47z" located at cell 'Dados Inibidores'!A35.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: Inhibitor
+Individual: 5  # Generated from value "5" located at cell 'Dados Inibidores'!A2.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: Inhibitor
+Individual: 35  # Generated from value "35" located at cell 'Dados Inibidores'!A3.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: Inhibitor
+Individual: 36  # Generated from value "36" located at cell 'Dados Inibidores'!A4.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: Inhibitor
+Individual: 37  # Generated from value "37" located at cell 'Dados Inibidores'!A5.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: Inhibitor
+Individual: 38  # Generated from value "38" located at cell 'Dados Inibidores'!A6.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: Inhibitor
+Individual: 41  # Generated from value "41" located at cell 'Dados Inibidores'!A7.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: Inhibitor
+Individual: 42  # Generated from value "42" located at cell 'Dados Inibidores'!A8.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: Inhibitor
+Individual: 43  # Generated from value "43" located at cell 'Dados Inibidores'!A9.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: Inhibitor
+Individual: 45  # Generated from value "45" located at cell 'Dados Inibidores'!A10.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: Inhibitor
+Individual: 46  # Generated from value "46" located at cell 'Dados Inibidores'!A11.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: Inhibitor
+Individual: 47a  # Generated from value "47a" located at cell 'Dados Inibidores'!A12.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: Inhibitor
+Individual: 47b  # Generated from value "47b" located at cell 'Dados Inibidores'!A13.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: Inhibitor
+Individual: 47c  # Generated from value "47c" located at cell 'Dados Inibidores'!A14.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: Inhibitor
+Individual: 47d  # Generated from value "47d" located at cell 'Dados Inibidores'!A15.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: Inhibitor
+Individual: 47e  # Generated from value "47e" located at cell 'Dados Inibidores'!A16.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: Inhibitor
+Individual: 47f  # Generated from value "47f" located at cell 'Dados Inibidores'!A17.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: Inhibitor
+Individual: 47i  # Generated from value "47i" located at cell 'Dados Inibidores'!A18.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: Inhibitor
+Individual: 47j  # Generated from value "47j" located at cell 'Dados Inibidores'!A19.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: Inhibitor
+Individual: 47k  # Generated from value "47k" located at cell 'Dados Inibidores'!A20.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: Inhibitor
+Individual: 47l  # Generated from value "47l" located at cell 'Dados Inibidores'!A21.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: Inhibitor
+Individual: 47m  # Generated from value "47m" located at cell 'Dados Inibidores'!A22.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: Inhibitor
+Individual: 47n  # Generated from value "47n" located at cell 'Dados Inibidores'!A23.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: Inhibitor
+Individual: 47o  # Generated from value "47o" located at cell 'Dados Inibidores'!A24.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: Inhibitor
+Individual: 47p  # Generated from value "47p" located at cell 'Dados Inibidores'!A25.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: Inhibitor
+Individual: 47q  # Generated from value "47q" located at cell 'Dados Inibidores'!A26.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: Inhibitor
+Individual: 47r  # Generated from value "47r" located at cell 'Dados Inibidores'!A27.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: Inhibitor
+Individual: 47s  # Generated from value "47s" located at cell 'Dados Inibidores'!A28.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: Inhibitor
+Individual: 47t  # Generated from value "47t" located at cell 'Dados Inibidores'!A29.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: Inhibitor
+Individual: 47u  # Generated from value "47u" located at cell 'Dados Inibidores'!A30.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: Inhibitor
+Individual: 47v  # Generated from value "47v" located at cell 'Dados Inibidores'!A31.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: Inhibitor
+Individual: 3Table47e  # Generated from value "3Table47e" located at cell 'Dados Inibidores'!A32.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: Inhibitor
+Individual: 3Table47w  # Generated from value "3Table47w" located at cell 'Dados Inibidores'!A33.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: Inhibitor
+Individual: 3Table47j  # Generated from value "3Table47j" located at cell 'Dados Inibidores'!A34.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: Inhibitor
+Individual: 3Table47z  # Generated from value "3Table47z" located at cell 'Dados Inibidores'!A35.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: Inhibitor
+Individual: 5  # Generated from value "5" located at cell 'Dados Inibidores'!A2.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: Inhibitor
+Individual: 35  # Generated from value "35" located at cell 'Dados Inibidores'!A3.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: Inhibitor
+Individual: 36  # Generated from value "36" located at cell 'Dados Inibidores'!A4.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: Inhibitor
+Individual: 37  # Generated from value "37" located at cell 'Dados Inibidores'!A5.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: Inhibitor
+Individual: 38  # Generated from value "38" located at cell 'Dados Inibidores'!A6.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: Inhibitor
+Individual: 41  # Generated from value "41" located at cell 'Dados Inibidores'!A7.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: Inhibitor
+Individual: 42  # Generated from value "42" located at cell 'Dados Inibidores'!A8.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: Inhibitor
+Individual: 43  # Generated from value "43" located at cell 'Dados Inibidores'!A9.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: Inhibitor
+Individual: 45  # Generated from value "45" located at cell 'Dados Inibidores'!A10.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: Inhibitor
+Individual: 46  # Generated from value "46" located at cell 'Dados Inibidores'!A11.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: Inhibitor
+Individual: 47a  # Generated from value "47a" located at cell 'Dados Inibidores'!A12.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: Inhibitor
+Individual: 47b  # Generated from value "47b" located at cell 'Dados Inibidores'!A13.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: Inhibitor
+Individual: 47c  # Generated from value "47c" located at cell 'Dados Inibidores'!A14.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: Inhibitor
+Individual: 47d  # Generated from value "47d" located at cell 'Dados Inibidores'!A15.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: Inhibitor
+Individual: 47e  # Generated from value "47e" located at cell 'Dados Inibidores'!A16.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: Inhibitor
+Individual: 47f  # Generated from value "47f" located at cell 'Dados Inibidores'!A17.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: Inhibitor
+Individual: 47i  # Generated from value "47i" located at cell 'Dados Inibidores'!A18.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: Inhibitor
+Individual: 47j  # Generated from value "47j" located at cell 'Dados Inibidores'!A19.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: Inhibitor
+Individual: 47k  # Generated from value "47k" located at cell 'Dados Inibidores'!A20.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: Inhibitor
+Individual: 47l  # Generated from value "47l" located at cell 'Dados Inibidores'!A21.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: Inhibitor
+Individual: 47m  # Generated from value "47m" located at cell 'Dados Inibidores'!A22.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: Inhibitor
+Individual: 47n  # Generated from value "47n" located at cell 'Dados Inibidores'!A23.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: Inhibitor
+Individual: 47o  # Generated from value "47o" located at cell 'Dados Inibidores'!A24.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: Inhibitor
+Individual: 47p  # Generated from value "47p" located at cell 'Dados Inibidores'!A25.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: Inhibitor
+Individual: 47q  # Generated from value "47q" located at cell 'Dados Inibidores'!A26.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: Inhibitor
+Individual: 47r  # Generated from value "47r" located at cell 'Dados Inibidores'!A27.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: Inhibitor
+Individual: 47s  # Generated from value "47s" located at cell 'Dados Inibidores'!A28.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: Inhibitor
+Individual: 47t  # Generated from value "47t" located at cell 'Dados Inibidores'!A29.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: Inhibitor
+Individual: 47u  # Generated from value "47u" located at cell 'Dados Inibidores'!A30.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: Inhibitor
+Individual: 47v  # Generated from value "47v" located at cell 'Dados Inibidores'!A31.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: Inhibitor
+Individual: 3Table47e  # Generated from value "3Table47e" located at cell 'Dados Inibidores'!A32.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: Inhibitor
+Individual: 3Table47w  # Generated from value "3Table47w" located at cell 'Dados Inibidores'!A33.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: Inhibitor
+Individual: 3Table47j  # Generated from value "3Table47j" located at cell 'Dados Inibidores'!A34.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: Inhibitor
+Individual: 3Table47z  # Generated from value "3Table47z" located at cell 'Dados Inibidores'!A35.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: Inhibitor
+Individual: 5  # Generated from value "5" located at cell 'Dados Inibidores'!A2.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: Inhibitor
+Individual: 35  # Generated from value "35" located at cell 'Dados Inibidores'!A3.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: Inhibitor
+Individual: 36  # Generated from value "36" located at cell 'Dados Inibidores'!A4.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: Inhibitor
+Individual: 37  # Generated from value "37" located at cell 'Dados Inibidores'!A5.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: Inhibitor
+Individual: 38  # Generated from value "38" located at cell 'Dados Inibidores'!A6.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: Inhibitor
+Individual: 41  # Generated from value "41" located at cell 'Dados Inibidores'!A7.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: Inhibitor
+Individual: 42  # Generated from value "42" located at cell 'Dados Inibidores'!A8.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: Inhibitor
+Individual: 43  # Generated from value "43" located at cell 'Dados Inibidores'!A9.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: Inhibitor
+Individual: 45  # Generated from value "45" located at cell 'Dados Inibidores'!A10.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: Inhibitor
+Individual: 46  # Generated from value "46" located at cell 'Dados Inibidores'!A11.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: Inhibitor
+Individual: 47a  # Generated from value "47a" located at cell 'Dados Inibidores'!A12.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: Inhibitor
+Individual: 47b  # Generated from value "47b" located at cell 'Dados Inibidores'!A13.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: Inhibitor
+Individual: 47c  # Generated from value "47c" located at cell 'Dados Inibidores'!A14.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: Inhibitor
+Individual: 47d  # Generated from value "47d" located at cell 'Dados Inibidores'!A15.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: Inhibitor
+Individual: 47e  # Generated from value "47e" located at cell 'Dados Inibidores'!A16.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: Inhibitor
+Individual: 47f  # Generated from value "47f" located at cell 'Dados Inibidores'!A17.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: Inhibitor
+Individual: 47i  # Generated from value "47i" located at cell 'Dados Inibidores'!A18.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: Inhibitor
+Individual: 47j  # Generated from value "47j" located at cell 'Dados Inibidores'!A19.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: Inhibitor
+Individual: 47k  # Generated from value "47k" located at cell 'Dados Inibidores'!A20.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: Inhibitor
+Individual: 47l  # Generated from value "47l" located at cell 'Dados Inibidores'!A21.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: Inhibitor
+Individual: 47m  # Generated from value "47m" located at cell 'Dados Inibidores'!A22.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: Inhibitor
+Individual: 47n  # Generated from value "47n" located at cell 'Dados Inibidores'!A23.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: Inhibitor
+Individual: 47o  # Generated from value "47o" located at cell 'Dados Inibidores'!A24.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: Inhibitor
+Individual: 47p  # Generated from value "47p" located at cell 'Dados Inibidores'!A25.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: Inhibitor
+Individual: 47q  # Generated from value "47q" located at cell 'Dados Inibidores'!A26.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: Inhibitor
+Individual: 47r  # Generated from value "47r" located at cell 'Dados Inibidores'!A27.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: Inhibitor
+Individual: 47s  # Generated from value "47s" located at cell 'Dados Inibidores'!A28.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: Inhibitor
+Individual: 47t  # Generated from value "47t" located at cell 'Dados Inibidores'!A29.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: Inhibitor
+Individual: 47u  # Generated from value "47u" located at cell 'Dados Inibidores'!A30.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: Inhibitor
+Individual: 47v  # Generated from value "47v" located at cell 'Dados Inibidores'!A31.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: Inhibitor
+Individual: 3Table47e  # Generated from value "3Table47e" located at cell 'Dados Inibidores'!A32.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: Inhibitor
+Individual: 3Table47w  # Generated from value "3Table47w" located at cell 'Dados Inibidores'!A33.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: Inhibitor
+Individual: 3Table47j  # Generated from value "3Table47j" located at cell 'Dados Inibidores'!A34.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: Inhibitor
+Individual: 3Table47z  # Generated from value "3Table47z" located at cell 'Dados Inibidores'!A35.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: Inhibitor
+Individual: 5  # Generated from value "5" located at cell 'Dados Inibidores'!A2.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: Inhibitor
+Individual: 35  # Generated from value "35" located at cell 'Dados Inibidores'!A3.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: Inhibitor
+Individual: 36  # Generated from value "36" located at cell 'Dados Inibidores'!A4.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: Inhibitor
+Individual: 37  # Generated from value "37" located at cell 'Dados Inibidores'!A5.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: Inhibitor
+Individual: 38  # Generated from value "38" located at cell 'Dados Inibidores'!A6.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: Inhibitor
+Individual: 41  # Generated from value "41" located at cell 'Dados Inibidores'!A7.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: Inhibitor
+Individual: 42  # Generated from value "42" located at cell 'Dados Inibidores'!A8.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: Inhibitor
+Individual: 43  # Generated from value "43" located at cell 'Dados Inibidores'!A9.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: Inhibitor
+Individual: 45  # Generated from value "45" located at cell 'Dados Inibidores'!A10.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: Inhibitor
+Individual: 46  # Generated from value "46" located at cell 'Dados Inibidores'!A11.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: Inhibitor
+Individual: 47a  # Generated from value "47a" located at cell 'Dados Inibidores'!A12.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: Inhibitor
+Individual: 47b  # Generated from value "47b" located at cell 'Dados Inibidores'!A13.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: Inhibitor
+Individual: 47c  # Generated from value "47c" located at cell 'Dados Inibidores'!A14.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: Inhibitor
+Individual: 47d  # Generated from value "47d" located at cell 'Dados Inibidores'!A15.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: Inhibitor
+Individual: 47e  # Generated from value "47e" located at cell 'Dados Inibidores'!A16.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: Inhibitor
+Individual: 47f  # Generated from value "47f" located at cell 'Dados Inibidores'!A17.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: Inhibitor
+Individual: 47i  # Generated from value "47i" located at cell 'Dados Inibidores'!A18.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: Inhibitor
+Individual: 47j  # Generated from value "47j" located at cell 'Dados Inibidores'!A19.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: Inhibitor
+Individual: 47k  # Generated from value "47k" located at cell 'Dados Inibidores'!A20.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: Inhibitor
+Individual: 47l  # Generated from value "47l" located at cell 'Dados Inibidores'!A21.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: Inhibitor
+Individual: 47m  # Generated from value "47m" located at cell 'Dados Inibidores'!A22.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: Inhibitor
+Individual: 47n  # Generated from value "47n" located at cell 'Dados Inibidores'!A23.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: Inhibitor
+Individual: 47o  # Generated from value "47o" located at cell 'Dados Inibidores'!A24.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: Inhibitor
+Individual: 47p  # Generated from value "47p" located at cell 'Dados Inibidores'!A25.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: Inhibitor
+Individual: 47q  # Generated from value "47q" located at cell 'Dados Inibidores'!A26.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: Inhibitor
+Individual: 47r  # Generated from value "47r" located at cell 'Dados Inibidores'!A27.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: Inhibitor
+Individual: 47s  # Generated from value "47s" located at cell 'Dados Inibidores'!A28.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: Inhibitor
+Individual: 47t  # Generated from value "47t" located at cell 'Dados Inibidores'!A29.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: Inhibitor
+Individual: 47u  # Generated from value "47u" located at cell 'Dados Inibidores'!A30.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: Inhibitor
+Individual: 47v  # Generated from value "47v" located at cell 'Dados Inibidores'!A31.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: Inhibitor
+Individual: 3Table47e  # Generated from value "3Table47e" located at cell 'Dados Inibidores'!A32.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: Inhibitor
+Individual: 3Table47w  # Generated from value "3Table47w" located at cell 'Dados Inibidores'!A33.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: Inhibitor
+Individual: 3Table47j  # Generated from value "3Table47j" located at cell 'Dados Inibidores'!A34.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: Inhibitor
+Individual: 3Table47z  # Generated from value "3Table47z" located at cell 'Dados Inibidores'!A35.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: Inhibitor
+Individual: 5  # Generated from value "5" located at cell 'Dados Inibidores'!A2.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: Inhibitor
+Individual: 35  # Generated from value "35" located at cell 'Dados Inibidores'!A3.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: Inhibitor
+Individual: 36  # Generated from value "36" located at cell 'Dados Inibidores'!A4.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: Inhibitor
+Individual: 37  # Generated from value "37" located at cell 'Dados Inibidores'!A5.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: Inhibitor
+Individual: 38  # Generated from value "38" located at cell 'Dados Inibidores'!A6.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: Inhibitor
+Individual: 41  # Generated from value "41" located at cell 'Dados Inibidores'!A7.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: Inhibitor
+Individual: 42  # Generated from value "42" located at cell 'Dados Inibidores'!A8.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: Inhibitor
+Individual: 43  # Generated from value "43" located at cell 'Dados Inibidores'!A9.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: Inhibitor
+Individual: 45  # Generated from value "45" located at cell 'Dados Inibidores'!A10.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: Inhibitor
+Individual: 46  # Generated from value "46" located at cell 'Dados Inibidores'!A11.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: Inhibitor
+Individual: 47a  # Generated from value "47a" located at cell 'Dados Inibidores'!A12.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: Inhibitor
+Individual: 47b  # Generated from value "47b" located at cell 'Dados Inibidores'!A13.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: Inhibitor
+Individual: 47c  # Generated from value "47c" located at cell 'Dados Inibidores'!A14.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: Inhibitor
+Individual: 47d  # Generated from value "47d" located at cell 'Dados Inibidores'!A15.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: Inhibitor
+Individual: 47e  # Generated from value "47e" located at cell 'Dados Inibidores'!A16.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: Inhibitor
+Individual: 47f  # Generated from value "47f" located at cell 'Dados Inibidores'!A17.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: Inhibitor
+Individual: 47i  # Generated from value "47i" located at cell 'Dados Inibidores'!A18.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: Inhibitor
+Individual: 47j  # Generated from value "47j" located at cell 'Dados Inibidores'!A19.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: Inhibitor
+Individual: 47k  # Generated from value "47k" located at cell 'Dados Inibidores'!A20.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: Inhibitor
+Individual: 47l  # Generated from value "47l" located at cell 'Dados Inibidores'!A21.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: Inhibitor
+Individual: 47m  # Generated from value "47m" located at cell 'Dados Inibidores'!A22.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: Inhibitor
+Individual: 47n  # Generated from value "47n" located at cell 'Dados Inibidores'!A23.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: Inhibitor
+Individual: 47o  # Generated from value "47o" located at cell 'Dados Inibidores'!A24.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: Inhibitor
+Individual: 47p  # Generated from value "47p" located at cell 'Dados Inibidores'!A25.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: Inhibitor
+Individual: 47q  # Generated from value "47q" located at cell 'Dados Inibidores'!A26.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: Inhibitor
+Individual: 47r  # Generated from value "47r" located at cell 'Dados Inibidores'!A27.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: Inhibitor
+Individual: 47s  # Generated from value "47s" located at cell 'Dados Inibidores'!A28.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: Inhibitor
+Individual: 47t  # Generated from value "47t" located at cell 'Dados Inibidores'!A29.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: Inhibitor
+Individual: 47u  # Generated from value "47u" located at cell 'Dados Inibidores'!A30.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: Inhibitor
+Individual: 47v  # Generated from value "47v" located at cell 'Dados Inibidores'!A31.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: Inhibitor
+Individual: 3Table47e  # Generated from value "3Table47e" located at cell 'Dados Inibidores'!A32.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: Inhibitor
+Individual: 3Table47w  # Generated from value "3Table47w" located at cell 'Dados Inibidores'!A33.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: Inhibitor
+Individual: 3Table47j  # Generated from value "3Table47j" located at cell 'Dados Inibidores'!A34.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: Inhibitor
+Individual: 3Table47z  # Generated from value "3Table47z" located at cell 'Dados Inibidores'!A35.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: Inhibitor
+Individual: 5  # Generated from value "5" located at cell 'Dados Inibidores'!A2.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G2.
+   Types: Inhibitor
+Individual: 35  # Generated from value "35" located at cell 'Dados Inibidores'!A3.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G3.
+   Types: Inhibitor
+Individual: 36  # Generated from value "36" located at cell 'Dados Inibidores'!A4.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G4.
+   Types: Inhibitor
+Individual: 37  # Generated from value "37" located at cell 'Dados Inibidores'!A5.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G5.
+   Types: Inhibitor
+Individual: 38  # Generated from value "38" located at cell 'Dados Inibidores'!A6.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G6.
+   Types: Inhibitor
+Individual: 41  # Generated from value "41" located at cell 'Dados Inibidores'!A7.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G7.
+   Types: Inhibitor
+Individual: 42  # Generated from value "42" located at cell 'Dados Inibidores'!A8.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G8.
+   Types: Inhibitor
+Individual: 43  # Generated from value "43" located at cell 'Dados Inibidores'!A9.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G9.
+   Types: Inhibitor
+Individual: 45  # Generated from value "45" located at cell 'Dados Inibidores'!A10.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G10.
+   Types: Inhibitor
+Individual: 46  # Generated from value "46" located at cell 'Dados Inibidores'!A11.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G11.
+   Types: Inhibitor
+Individual: 47a  # Generated from value "47a" located at cell 'Dados Inibidores'!A12.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G12.
+   Types: Inhibitor
+Individual: 47b  # Generated from value "47b" located at cell 'Dados Inibidores'!A13.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G13.
+   Types: Inhibitor
+Individual: 47c  # Generated from value "47c" located at cell 'Dados Inibidores'!A14.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G14.
+   Types: Inhibitor
+Individual: 47d  # Generated from value "47d" located at cell 'Dados Inibidores'!A15.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G15.
+   Types: Inhibitor
+Individual: 47e  # Generated from value "47e" located at cell 'Dados Inibidores'!A16.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G16.
+   Types: Inhibitor
+Individual: 47f  # Generated from value "47f" located at cell 'Dados Inibidores'!A17.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G17.
+   Types: Inhibitor
+Individual: 47i  # Generated from value "47i" located at cell 'Dados Inibidores'!A18.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G18.
+   Types: Inhibitor
+Individual: 47j  # Generated from value "47j" located at cell 'Dados Inibidores'!A19.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G19.
+   Types: Inhibitor
+Individual: 47k  # Generated from value "47k" located at cell 'Dados Inibidores'!A20.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G20.
+   Types: Inhibitor
+Individual: 47l  # Generated from value "47l" located at cell 'Dados Inibidores'!A21.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G21.
+   Types: Inhibitor
+Individual: 47m  # Generated from value "47m" located at cell 'Dados Inibidores'!A22.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G22.
+   Types: Inhibitor
+Individual: 47n  # Generated from value "47n" located at cell 'Dados Inibidores'!A23.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G23.
+   Types: Inhibitor
+Individual: 47o  # Generated from value "47o" located at cell 'Dados Inibidores'!A24.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G24.
+   Types: Inhibitor
+Individual: 47p  # Generated from value "47p" located at cell 'Dados Inibidores'!A25.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G25.
+   Types: Inhibitor
+Individual: 47q  # Generated from value "47q" located at cell 'Dados Inibidores'!A26.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G26.
+   Types: Inhibitor
+Individual: 47r  # Generated from value "47r" located at cell 'Dados Inibidores'!A27.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G27.
+   Types: Inhibitor
+Individual: 47s  # Generated from value "47s" located at cell 'Dados Inibidores'!A28.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G28.
+   Types: Inhibitor
+Individual: 47t  # Generated from value "47t" located at cell 'Dados Inibidores'!A29.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G29.
+   Types: Inhibitor
+Individual: 47u  # Generated from value "47u" located at cell 'Dados Inibidores'!A30.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G30.
+   Types: Inhibitor
+Individual: 47v  # Generated from value "47v" located at cell 'Dados Inibidores'!A31.
+   Facts: has_the "Yes"  # Generated from value "Yes" located at cell 'Dados Inibidores'!G31.
+   Types: Inhibitor
+Individual: 3Table47e  # Generated from value "3Table47e" located at cell 'Dados Inibidores'!A32.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G32.
+   Types: Inhibitor
+Individual: 3Table47w  # Generated from value "3Table47w" located at cell 'Dados Inibidores'!A33.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G33.
+   Types: Inhibitor
+Individual: 3Table47j  # Generated from value "3Table47j" located at cell 'Dados Inibidores'!A34.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G34.
+   Types: Inhibitor
+Individual: 3Table47z  # Generated from value "3Table47z" located at cell 'Dados Inibidores'!A35.
+   Facts: has_the "No"  # Generated from value "No" located at cell 'Dados Inibidores'!G35.
+   Types: Inhibitor
+
+===========================================================================================================
