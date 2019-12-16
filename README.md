@@ -1,6 +1,6 @@
 => This file is under development and it's mostly a template. The correct informations will be completed in due time.
 
-![](images/chemistry.jpg)
+![](resources/chemistry.jpg)
 # OntoQSAR
 
 OntoQSAR is a project to develop an Ontology that represents QSAR (Quantitative Structure–Activity Relationship)and a tool to use it.
