@@ -1,0 +1,2369 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://nemo.inf.ufes.br/OntoQSAR.owl#"
+     xml:base="http://nemo.inf.ufes.br/OntoQSAR.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#algorithm -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#algorithm">
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#qsar_descriptor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#assay_method -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#assay_method">
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#biological_activity -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#biological_activity">
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#biological_target -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#biological_target">
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#diagnosis"/>
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Diagnosis"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#chemical_descriptor -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#chemical_descriptor">
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#qsar_descriptor"/>
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#quantum_chemistry_computational_method"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#diagnosis -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#diagnosis">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Diagnosis"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#functional_group_descriptor -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#functional_group_descriptor">
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor">
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacokinetics"/>
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacophoric_group"/>
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacokinetics -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacokinetics">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacophoric_group -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacophoric_group">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacophoric_group"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#publication -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#publication">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#qsar_descriptor -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#qsar_descriptor">
+        <owl:inverseOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#validation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#quantum_chemistry_computational_method -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#quantum_chemistry_computational_method">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#validation -->
+
+    <owl:ObjectProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#validation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+        <rdfs:range rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Absorption_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Absorption_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Absorption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#AlogP_descriptor_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#AlogP_descriptor_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#AlogP_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#BBB_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#BBB_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#BBB"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target_PDB -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target_PDB">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target_family -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target_family">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target_name -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target_name">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Charges_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Charges_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Charges"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor_ID">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Contribution_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Contribution_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Contribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Dipole_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Dipole_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Dipole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#EC50_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#EC50_value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#EC50"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Esolv.Water_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Esolv.Water_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Esolv.Water"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Excretion_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Excretion_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Excretion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Finger_Prints_PubChem -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Finger_Prints_PubChem">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Finger_Prints"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Finger_Prints_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Finger_Prints_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Finger_Prints"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#FreeE_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#FreeE_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#FreeE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#HBA_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#HBA_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_acceptors_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#HBD_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#HBD_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_donors_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#HOMO_Energy_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#HOMO_Energy_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Highest_Occupied_Molecular_Orbital_Energy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#IC50_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#IC50_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#IC50"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor_ID">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#LUMO_Energy_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#LUMO_Energy_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Lowest_Unoccupied_Molecular_Orbital_Energy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Metabolism_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Metabolism_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Metabolism"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Molecular_mass_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Molecular_mass_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Molecular_mass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Osc.Force_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Osc.Force_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Osc.Force"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group_name -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group_name">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Tissue_Distribution_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Tissue_Distribution_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Tissue_Distribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Toxicity_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Toxicity_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Toxicity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Transition_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Transition_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Transition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ZeroE_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ZeroE_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#ZeroE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ab_initio_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ab_initio_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#ab_initio_quantum_chemistry_computational_method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#acidic_group_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#acidic_group_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#acidic_group_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#alcohol_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#alcohol_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#alcohol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#aldehyde_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#aldehyde_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#aldehyde"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#amide_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#amide_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#amide"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#amine_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#amine_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#amine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#aromatic_atom_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#aromatic_atom_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#aromatic_atom_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#atom_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#atom_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atom_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#basic_group_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#basic_group_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#basic_group_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#benzene_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#benzene_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#benzene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#bioassay_method -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#bioassay_method">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#bioassay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#carbon_atom_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#carbon_atom_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#carboxylic_acid_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#carboxylic_acid_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#carboxylic_acid"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#chlorine_atom_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#chlorine_atom_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#cross-validation_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#cross-validation_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#cross-validation_information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count_containing_heteroatoms_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count_containing_heteroatoms_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count_containing_heteroatoms"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#disease_name -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#disease_name">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#double_bond_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#double_bond_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#drug_name -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#drug_name">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#drug_phase -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#drug_phase">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ester_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ester_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#ester"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ether_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ether_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#ether"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#external_validation_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#external_validation_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#external_validation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#fluorine_atom_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#fluorine_atom_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#genetic_algorithm_name -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#genetic_algorithm_name">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Genetic_Algorithm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#halogen_atom_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#halogen_atom_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hartree-fock_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hartree-fock_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#hartree-fock_method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#heavy_atom_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#heavy_atom_count_value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#heavy_atom_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hydrocarbon_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrocarbon_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrocarbon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_atom_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_atom_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_silico_method -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_silico_method">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#in_silico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro_celular_lineage -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro_celular_lineage">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro_method -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro_method">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro_temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro_temperature">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_vivo_method -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vivo_method">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_vivo_organism -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vivo_organism">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#internal_validation_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#internal_validation_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#internal_validation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ketone_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ketone_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#ketone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#linear_QSAR_software -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#linear_QSAR_software">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#linear_QSAR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#lipinski_violation -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#lipinski_violation">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#lipinski"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#molar_refractivity_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#molar_refractivity_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#molar_refractivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#monte_carlo_algorithm_name -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#monte_carlo_algorithm_name">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Monte_Carlo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#nitrogen_atom_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#nitrogen_atom_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#non-linear_dimensional_QSAR_software -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#non-linear_dimensional_QSAR_software">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#non-linear_dimensional_QSAR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#oxygen_atom_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#oxygen_atom_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#pIC50_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#pIC50_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#pIC50"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#pKi_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#pKi_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#pKi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#partition_coefficient_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#partition_coefficient_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#partition_coefficient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#phenols_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#phenols_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#phenols"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#pi-electron_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#pi-electron_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#pi-electron_computational_method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#plane_polarized_light_method_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#plane_polarized_light_method_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#plane_polarized_light_method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#polar_surface_area_descriptor_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#polar_surface_area_descriptor_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#polar_surface_area_descriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#publication_DOI -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#publication_DOI">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#publication_authors -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#publication_authors">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#publication_date -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#publication_date">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#publication_journal -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#publication_journal">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#publication_title -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#publication_title">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#regression_statistics_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#regression_statistics_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#regression_statistics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#rotatable_bond_count_excluding_terminal_bonds -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#rotatable_bond_count_excluding_terminal_bonds">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#rotatable_bond_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#rotatable_bond_count_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#rotatable_bond_count_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#rotatable_bond_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#semi-empirical_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#semi-empirical_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#semi-empirical_quantum_chemistry_method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#single_bond_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#single_bond_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#split_validation_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#split_validation_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#split_validation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#supervised_learning_algorithm_name -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#supervised_learning_algorithm_name">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Supervised_Learning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#three_dimensional_QSAR_software -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#three_dimensional_QSAR_software">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#three_dimensional_QSAR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#trial_and_error_algorithm_name -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#trial_and_error_algorithm_name">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Trial_and_Error"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#triple_bond_count -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#triple_bond_count">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_aggressiveness -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_aggressiveness">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_phase -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_phase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_size_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_size_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#two_dimensional_QSAR_software -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#two_dimensional_QSAR_software">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#two_dimensional_QSAR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#valence_electron_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#valence_electron_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#valence_electron_computational_method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#y_scrambling_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#y_scrambling_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#y_scrambling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#zagreb_index_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#zagreb_index_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#zagreb_index"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(eV)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(eV)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(eV)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(nM)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(nM)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(nM)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#HBA_count(Lipinski_definition)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#HBA_count(Lipinski_definition)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_acceptors_count(using_Lipinski’s_definition)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#HBD_count(Lipinski_definition)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#HBD_count(Lipinski_definition)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_donnors_count(using_Lipinski’s_definition)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_acceptors_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_acceptors_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_acceptors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_donors_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_donors_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_donors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(first_ionization_potential)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(first_ionization_potential)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(first_ionization_potential)_descriptors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(mass)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(mass)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(mass)_descriptors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(polarizability)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(polarizability)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(polarizability)_descriptors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(van_der_Waals_volumes)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(van_der_Waals_volumes)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(van_der_Waals_volumes)_descriptors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH2)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH2)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH2)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(OH)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(OH)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(OH)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(SH2)_value -->
+
+    <owl:DatatypeProperty rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(SH2)_value">
+        <rdfs:domain rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(SH2)"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Absorption -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Absorption">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#algorithm"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#AlogP_descriptor -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#AlogP_descriptor">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#assay_method"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Atom-type_H_E-State -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Atom-type_H_E-State">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#BBB -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#BBB">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#biological_activity"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#biological_target"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Diagnosis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#biological_target"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Charges -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Charges">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#chemical_descriptor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#chemical_descriptor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#chemical_descriptor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Contribution -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Contribution">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Diagnosis -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#diagnosis"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Dipole -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Dipole">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#EC50 -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#EC50">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Esolv.Water -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Esolv.Water">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Excretion -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Excretion">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Finger_Prints -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Finger_Prints">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#FreeE -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#FreeE">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#functional_group_descriptor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Genetic_Algorithm -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Genetic_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Highest_Occupied_Molecular_Orbital_Energy -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Highest_Occupied_Molecular_Orbital_Energy">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#IC50 -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#IC50">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#inhibitor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Lowest_Unoccupied_Molecular_Orbital_Energy -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Lowest_Unoccupied_Molecular_Orbital_Energy">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Metabolism -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Metabolism">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Molecular_mass -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Molecular_mass">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Monte_Carlo -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Monte_Carlo">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Osc.Force -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Osc.Force">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacokinetics"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#pharmacophoric_group"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#in_silico"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#qsar_descriptor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#qsar_descriptor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#qsar_descriptor"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#quantum_chemistry_computational_method"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Supervised_Learning -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Supervised_Learning">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Tissue_Distribution -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Tissue_Distribution">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Toxicity -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Toxicity">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Transition -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Transition">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Trial_and_Error -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Trial_and_Error">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Validation -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#validation"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ZeroE -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ZeroE">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ab_initio_quantum_chemistry_computational_method -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ab_initio_quantum_chemistry_computational_method">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#acidic_group_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#acidic_group_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#alcohol -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#alcohol">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#aldehyde -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#aldehyde">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#amide -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#amide">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#amine -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#amine">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#aromatic_atom_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#aromatic_atom_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#atom_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#atom_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#atomic_QSAR_descriptor">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#basic_group_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#basic_group_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#benzene -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#benzene">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#bioassay -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#bioassay">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#carboxylic_acid -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#carboxylic_acid">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#cross-validation_information -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#cross-validation_information">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count_containing_heteroatoms -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count_containing_heteroatoms">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#cycle_count"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#drug -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#drug">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ester -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ester">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ether -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ether">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#external_validation -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#external_validation">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hartree-fock_method -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hartree-fock_method">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#heavy_atom_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#heavy_atom_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hydrocarbon -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrocarbon">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_acceptors_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_acceptors_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_donors_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_donors_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_silico -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_silico">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vitro">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#in_vivo -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#in_vivo">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#internal_validation -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#internal_validation">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#ketone -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#ketone">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#linear_QSAR -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#linear_QSAR">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#lipinski -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#lipinski">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#molar_refractivity -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#molar_refractivity">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#non-linear_dimensional_QSAR -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#non-linear_dimensional_QSAR">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#pIC50 -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#pIC50">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#pKi -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#pKi">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#partition_coefficient -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#partition_coefficient">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#phenols -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#phenols">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#pi-electron_computational_method -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#pi-electron_computational_method">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#plane_polarized_light_method -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#plane_polarized_light_method">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#polar_surface_area_descriptor -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#polar_surface_area_descriptor">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#publication -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#publication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+                <owl:someValuesFrom rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#regression_statistics -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#regression_statistics">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#rotatable_bond_count -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#rotatable_bond_count">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#bond_count"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#semi-empirical_quantum_chemistry_method -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#semi-empirical_quantum_chemistry_method">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#split_validation -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#split_validation">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#three_dimensional_QSAR -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#three_dimensional_QSAR">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_size -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#tumor_size">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#two_dimensional_QSAR -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#two_dimensional_QSAR">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#valence_electron_computational_method -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#valence_electron_computational_method">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#y_scrambling -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#y_scrambling">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#zagreb_index -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#zagreb_index">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(eV) -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(eV)">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(nM) -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Abs.máx(nM)">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_acceptors -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_acceptors">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Atom-type_H_E-State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_donors -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Minimum_E-States_for_(strong)_Hydrogen_Bond_donors">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Atom-type_H_E-State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(first_ionization_potential)_descriptors -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(first_ionization_potential)_descriptors">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(mass)_descriptors -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(mass)_descriptors">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(polarizability)_descriptors -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(polarizability)_descriptors">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(van_der_Waals_volumes)_descriptors -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Moreau-Broto_autocorrelation(van_der_Waals_volumes)_descriptors">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH) -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH)">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Atom-type_H_E-State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH2) -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(NH2)">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Atom-type_H_E-State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(OH) -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(OH)">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Atom-type_H_E-State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(SH2) -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Sum_of_atom-type_H_E-State(SH2)">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#Atom-type_H_E-State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_acceptors_count(using_Lipinski’s_definition) -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_acceptors_count(using_Lipinski’s_definition)">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_acceptors_count"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_donnors_count(using_Lipinski’s_definition) -->
+
+    <owl:Class rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_donnors_count(using_Lipinski’s_definition)">
+        <rdfs:subClassOf rdf:resource="http://nemo.inf.ufes.br/OntoQSAR.owl#hydrogen_bond_donors_count"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Algorithm"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Assay_method"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Activity"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Biological_Target"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Chemical_Descriptor"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Diagnosis"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Functional_Group_Descriptor"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Inhibitor"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacokinetics"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Pharmacophoric_Group"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#QSAR_descriptor"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Quantum_Chemistry_Computational_Method"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#Validation"/>
+            <rdf:Description rdf:about="http://nemo.inf.ufes.br/OntoQSAR.owl#publication"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
