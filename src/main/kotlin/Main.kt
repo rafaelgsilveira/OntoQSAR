@@ -23,11 +23,11 @@ fun main() {
     embeddedServer(Netty, System.getenv("PORT")?.toInt() ?: 8080) {
         routing {
             trace { application.log.trace(it.buildText()) }
-
-           get("/"){
-               val html = File("/home/ragasil/Projects/01_OntoQSAR/WebSemantica2019-master/src/main/resources/index2.html").readText()
-               call.respondText(html, ContentType.Text.Html)
-           }
+            
+            
+            static("/") {
+                resource("/", "index2.html")
+            }
 
             static("static") {
                 resources("static")
@@ -43,7 +43,8 @@ fun main() {
 }
 
 val ontModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM).apply {
-    read("/home/ragasil/Projects/01_OntoQSAR/WebSemantica2019-master/src/main/resources/OntoQSAR4_data.ttl")
+    val content = this::class.java.classLoader.getResourceAsStream("OntoQSAR4_data.ttl")
+    read(content, null, "TTL")
 }
 
 
