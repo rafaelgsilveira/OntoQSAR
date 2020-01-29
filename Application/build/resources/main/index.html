@@ -1,0 +1,185 @@
+<html>
+<head> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script></head>
+<body>
+Pergunta <br><br>
+<select name="" onchange="myFunction(event)" id="myselect">
+    <option value="selecione" selected="selected">Selecione uma query</option>
+    <option value="query1">Quais inibidores violam a regra de lipinski</option>
+    <option value="query2">Quais inibidores possuem atom count < 45.0</option>
+    <option value="query3">Quais inibidores possuem IC50</option>
+    <option value="query4">Liste os inibidores que possuem biological target PDB</option>
+    <option value="query5">Quais linhagens celulares foram testadas acima de 26 graus celcius</option>
+    <option value="query6">Quais drogas estão na última fase de estudo</option>
+    <option value="query7">Quais os testes biológicos conhecidos</option>
+    <option value="query8">Quais inibidores foram testados em celulas humanas</option>
+    <option value="query_propria">Fazer minha query SPARQL</option>
+</select>
+<br><br>
+
+Query<br><br>
+
+<form action="/query" id="form">
+    <textarea name="query" id="mytext" rows="30" cols="100"></textarea><br>
+    <input type="submit" value="Enviar">
+</form>
+
+<script>
+    function myFunction(e) {
+        valor = $("#myselect").val()
+        switch(valor) {
+            case "query1":
+                $("#mytext").val(
+`
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>
+SELECT DISTINCT ?Inhibitor_ID
+WHERE {
+    ?x :lipinski_violation ?lipinski_violation .
+    ?x rdf:type ?lipinski .
+    ?y rdf:type :Chemical_Descriptor.
+    ?y :sub_chemical_descriptor ?x.
+    ?z :chemical_descriptor ?y.
+    ?z :Inhibitor_ID ?Inhibitor_ID.
+    FILTER regex(?lipinski_violation, "yes")
+         }`
+       )
+                break;
+                
+        case "query2":
+        $("#mytext").val(`
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>
+SELECT DISTINCT ?Inhibitor_ID
+WHERE {
+    ?x rdf:type :atom_count.
+    ?x :atom_count_value ?atom_count.
+    ?y rdf:type :Chemical_Descriptor.
+    ?y :sub_chemical_descriptor ?x.
+    ?z :chemical_descriptor ?y.
+    ?z :Inhibitor_ID ?Inhibitor_ID.
+    FILTER (?atom_count < 45.0)
+}
+        `)
+            break;
+        case "query3":
+        $("#mytext").val(`
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>                
+SELECT DISTINCT ?Inhibitor_ID
+WHERE {
+    ?inhi :biological_activity ?ic50i .
+    ?ic50i rdf:type :IC50 .
+    ?ic50i :IC50_value ?ic50i_value.
+    ?inhi :Inhibitor_ID ?Inhibitor_ID.
+    FILTER (isNumeric(?ic50i_value))
+}
+        `)
+            break;
+        case "query4":
+                $("#mytext").val(`
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>
+        
+SELECT DISTINCT ?Inhibitor_ID
+WHERE {
+    ?inhi :biological_target ?biot_i.
+    ?biot_i rdf:type :Biological_Target.
+    ?biot_i :Biological_Target_PDB ?biot_i_pdb.
+    ?inhi :Inhibitor_ID ?Inhibitor_ID.
+    FILTER (!isBlank(?biot_i_pdb))
+}
+                `)
+            break;
+        case "query5":
+                $("#mytext").val(`
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>
+        
+SELECT DISTINCT ?in_vitro_i_cell
+WHERE {
+    ?invitro_i rdf:type :in_vitro.
+    ?invitro_i :in_vitro_temperature ?in_vitro_i_temp.
+    ?invitro_i :in_vitro_celular_lineage ?in_vitro_i_cell.
+    FILTER(?in_vitro_i_temp >= 26)
+}                
+                
+                `)
+            break;
+        case "query6":
+        $("#mytext").val(`
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>
+        
+SELECT DISTINCT ?dorga_name
+WHERE {
+    ?dorga rdf:type :drug.
+    ?dorga :drug_phase ?dorga_fase.
+    ?dorga :drug_name ?dorga_name.
+    FILTER (?dorga_fase = "4")
+}        
+        `)
+            break;
+        case "query7":
+        $("#mytext").val(`
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>
+        
+SELECT DISTINCT ?bioa_m
+WHERE {
+    ?bioa_i rdf:type :bioassay.
+    ?bioa_i :bioassay_method ?bioa_m.
+}        
+        
+        `)
+            break;
+        case "query8":
+        $("#mytext").val(`
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>
+        
+SELECT DISTINCT ?Inhibitor_ID
+WHERE {
+    ?inhi_i rdf:type :Inhibitor.
+    ?inhi_i :assay_method ?inhi_i_assay_method.
+    ?inhi_i_assay_method rdf:type :in_vivo.
+    ?inhi_i_assay_method :in_vivo_organism ?in_vivo_organism.
+    ?inhi_i :Inhibitor_ID ?Inhibitor_ID.
+    FILTER (?in_vivo_organism = "célula animal (humano)")
+}        
+        
+        `)
+            break;
+        default:
+            $("#mytext").val("")
+            break;
+        }   
+    }
+    
+    $("#form").on("submit", function(e) {
+        e.preventDefault()
+        $.ajax({
+            url: "/query",
+            type: "get",
+            data: $.param({
+                query: $("#mytext").val()
+            }),
+            success: function(data){
+                alert(data)
+            } 
+        })
+    })
+    
+</script>
+
+</body>
+
+
+</html>
