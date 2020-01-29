@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.3.61"
+    application
 }
 
 group = "org.example"
@@ -20,6 +21,10 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:1.2.3")
 }
 
+application {
+    mainClassName = "me.kerooker.jena.MainKT"
+}
+
 tasks {
     compileKotlin {
         kotlinOptions.jvmTarget = "1.8"
@@ -27,4 +32,8 @@ tasks {
     compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
     }
+}
+
+tasks.register("stage") {
+    dependsOn("installDist")
 }

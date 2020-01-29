@@ -20,7 +20,7 @@ import java.io.File
 
 
 fun main() {
-    embeddedServer(Netty, 8080) {
+    embeddedServer(Netty, System.getenv("PORT")?.toInt() ?: 8080) {
         routing {
             trace { application.log.trace(it.buildText()) }
 
@@ -32,10 +32,7 @@ fun main() {
             static("static") {
                 resources("static")
             }
-
-
-
-
+            
 
             get("/query") {
                 val query = call.request.queryParameters["query"]!!
