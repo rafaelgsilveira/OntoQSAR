@@ -22,7 +22,7 @@ dependencies {
 }
 
 application {
-    mainClassName = "me.kerooker.jena.MainKT"
+    mainClassName = "me.kerooker.jena.MainKt"
 }
 
 tasks {
