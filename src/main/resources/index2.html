@@ -199,10 +199,10 @@ PREFIX : <http://nemo.inf.ufes.br/OntoQSAR.owl#>
 
 SELECT DISTINCT ?dorga_name
 WHERE {
-    ?dorga rdf:type :drug.
-    ?dorga :drug_phase ?dorga_fase.
-    ?dorga :drug_name ?dorga_name.
-    FILTER (?dorga_fase = "4")
+    ?droga rdf:type :drug.
+    ?droga :drug_phase ?droga_fase.
+    ?droga :drug_name ?droga_name.
+    FILTER (?droga_fase = "4")
 }
         `)
                 break;
