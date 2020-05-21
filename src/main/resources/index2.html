@@ -45,15 +45,15 @@
     <div class="container">
 <select name="" onchange="myFunction(event)" id="myselect">
     <option value="selecione" selected="selected">Select</option>
-    <option value="query1">Quais inibidores violam a regra de lipinski</option>
-    <option value="query2">Quais inibidores possuem atom count < 45.0</option>
-    <option value="query3">Quais inibidores possuem IC50</option>
-    <option value="query4">Liste os inibidores que possuem biological target PDB</option>
-    <option value="query5">Quais linhagens celulares foram testadas acima de 26 graus celcius</option>
-    <option value="query6">Quais drogas estão na última fase de estudo</option>
-    <option value="query7">Quais os testes biológicos conhecidos</option>
-    <option value="query8">Quais inibidores foram testados em celulas humanas</option>
-    <option value="query_propria">Fazer minha query SPARQL</option>
+    <option value="query1">Which inhibitors violate lipinski's rule</option>
+    <option value="query2">Which inhibitors have atom count < 45.0</option>
+    <option value="query3">Which inhibitors have IC50</option>
+    <option value="query4">List inhibitors that have a PDB biological target value</option>
+    <option value="query5">Which celular lineages where tested with a temperature above 26 celcius</option>
+    <option value="query6">Which drugs are in the last study phase</option>
+    <option value="query7">List all biological tests</option>
+    <option value="query8">Which inhibitors where tested in human cells</option>
+    <option value="query_propria">Write my own SPARQL query</option>
 </select>
 <br><br>
     </div>
@@ -64,7 +64,7 @@
 
 <form action="/query" id="form">
     <textarea name="query" id="mytext" rows="30" cols="100"></textarea><br>
-    <input type="submit" value="Enviar">
+    <input type="submit" value="Send">
 </form>
     </div>
 
