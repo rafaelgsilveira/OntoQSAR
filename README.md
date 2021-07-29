@@ -1,5 +1,5 @@
 => This file is under development and it's mostly a template. The correct informations will be completed in due time.
-<span style="color:blue">some *blue* text</span>
+
 
 ![](resources/chemistry.jpg)
 # OntoQSAR
