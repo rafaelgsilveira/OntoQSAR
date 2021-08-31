@@ -1,4 +1,6 @@
-=> This file is under development and it's mostly a template. The correct informations will be completed in due time.
+```diff
+- This file is under development and it's mostly a template. The correct informations will be completed in due time.
+```
 
 
 ![](resources/chemistry.jpg)
